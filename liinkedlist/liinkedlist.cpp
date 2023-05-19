@@ -138,7 +138,7 @@ int main()
 		cout << endl << "Masukkan pilihan (1-5): ";
 		cin >> ch;
 		switch (ch)
-		{ 
+		{
 		case '1':
 		{
 			mhs.addNode();
@@ -157,7 +157,7 @@ int main()
 			if (mhs.delNode(nim) == false)
 				cout << endl << "Data tidak ditemukan" << endl;
 			else
-				cout << endl << "Data dengan nomor mahasiswa " << nim << "berhasil dihapus " << endl;		
+				cout << endl << "Data dengan nomor mahasiswa " << nim << "berhasil dihapus " << endl;
 		}
 		break;
 		case '3':
@@ -187,8 +187,16 @@ int main()
 			}
 		}
 		break;
-
-
-
+		case '5':
+		{
+			exit(0);
+		}
+		break;
+		default:
+		{
+			cout << "Pilihan salah !." << endl;
+		}
+		break;
+		}
 	}
 }
