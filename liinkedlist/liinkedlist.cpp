@@ -10,4 +10,6 @@ public:
 	Node* next;
 };
 
-
+class List
+{
+	Node* START;
